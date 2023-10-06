@@ -384,10 +384,7 @@ body {
     .profile::after {
         display: none;
     }
-    .photo img {
-        width: 100px;
-        height: 100px;
-    }
+
 }
 
 @media (max-width: 768px) {
