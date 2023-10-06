@@ -40,6 +40,7 @@ body {
     background-color: var(--color-gray-light-2);
     display: flex;
     box-shadow: 0px 0px 15px 4px #b3b3b3;
+
 }
 
 .intro {
@@ -240,6 +241,24 @@ body {
 .timeline-block:hover::before {
     animation: circle 1.2s infinite;
 }
+a {
+    outline: none;
+    text-decoration: none;
+    padding: 2px 1px 0;
+}
+
+a:link {
+    color: var(--profile-theme);
+}
+
+
+a:hover {
+    border-bottom: 1px solid;
+    text-decoration: none;
+    color: var(--color-tiffany);
+    border-radius: 5px;
+}
+
 
 /* Programming skills section */
 .pg-list, .tool-list, .favor-list {
@@ -270,6 +289,7 @@ body {
 }
 .tool-list {
     list-style: none;
+    flex-wrap: wrap;
     display: flex;
     justify-content: space-between;
 }
@@ -384,7 +404,10 @@ body {
     .profile::after {
         display: none;
     }
-
+    .photo img {
+        width: 30%;
+        height: 30%;
+    }
 }
 
 @media (max-width: 768px) {
