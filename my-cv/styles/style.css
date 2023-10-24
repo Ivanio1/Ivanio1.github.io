@@ -19,8 +19,6 @@
 html {
     font-size: 100%;
     font-family: 'PT Sans', sans-serif;
-
-
 }
 
 * {
@@ -49,6 +47,18 @@ body {
     box-shadow: 5px 0px 15px 0px #b3b3b3;
     z-index: 5;
 }
+.translate{
+    background: transparent;
+    border: none;
+    margin-left: 90%;
+}
+.header-item-lang-en{
+    list-style-type: none;
+}
+.header-item-lang-ru{
+    list-style-type: none;
+}
+
 .profile {
     position: relative;
     background-color: var(--profile-theme);

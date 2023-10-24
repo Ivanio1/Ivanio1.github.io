@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <title>About me</title>
     <meta name="description" content="simple CV example created with HTML and CSS">
     <meta name="author" content="Fly Nerd">
@@ -19,26 +19,26 @@
                 <img src="img/u336760.jpg">
             </div>
             <div class="bio">
-                <h1 class="name">Sobolev Ivan</h1>
-                <p class="profession">Developer</p>
+                <h1 class="name lang"  key="name">Sobolev Ivan</h1>
+                <p class="profession lang" key="profession">Developer</p>
             </div>
         </div>
         <div class="intro-section about">
-            <h1 class="title">about me</h1>
-            <p class="paragraph">
+            <h1 class="title lang" key="about me">about me</h1>
+            <p class="paragraph lang" key="paragraph">
                 Software engineer with a proven ability to adapt in both self-starting and
                 collaborative environments while staying focused on achieving high quality results under strict deadline. My strengths are flexibility, responsibility and decency. When I'm not coding, you'll find me in the gym or on the court shooting hoops.
             </p>
         </div>
         <div class="intro-section contact">
-            <h1 class="title">Contact</h1>
+            <h1 class="title lang" key="contact">Contact</h1>
             <div class="info-section">
                 <i class="fas fa-phone"></i>
                 <span>(+7)950-553-95-52</span>
             </div>
             <div class="info-section">
                 <i class="fas fa-map-marker-alt"></i>
-                <span>Saint Petersburg, Russia</span>
+                <span class="lang" key="city">Saint Petersburg, Russia</span>
             </div>
             <div class="info-section">
                 <i class="fas fa-envelope"></i>
@@ -53,7 +53,7 @@
 
         </div>
         <div class="intro-section follow">
-            <h1 class="title">Follow</h1>
+            <h1 class="title lang" key="follow">Follow</h1>
             <div class="info-section link">
                 <i class="fab fa-github"></i>
                 <a target="_blank" rel="author" href="https://github.com/Ivanio1">
@@ -75,18 +75,25 @@
         </div>
     </div>
     <div class="detail">
+
         <div class="detail-section edu">
             <div class="detail-title">
                 <div class="title-icon">
                     <i class="fas fa-user-graduate"></i>
                 </div>
-                <span>Eduation</span>
+                <span class="lang" key="education">Education</span>
+                <div>
+                    <ul class="lang-ul">
+                        <li class="header-item-lang-ru"> <button id="ru" class="translate"><img src="img/10.png" alt="ruflag" width="50%" height="25%"></button></li>
+                        <li class="header-item-lang-en"> <button id="en" class="translate"><img src="img/35a3f6f12e4a2135ac48fad6df4fdb77.jpg" alt="ukflag" width="50%" height="25%"></button></li>
+                    </ul>
+                </div>
             </div>
             <div class="detail-content">
                 <div class="timeline-block">
-                    <h1>Software engineering</h1>
-                    <p>ITMO University, Russia</p>
-                    <time>2021 - present</time>
+                    <h1 class="lang" key="se">Software engineering</h1>
+                    <p class="lang" key="uni">ITMO University, Russia</p>
+                    <time class="lang" key="time">2021 - present</time>
                 </div>
 
             </div>
@@ -96,13 +103,13 @@
                 <div class="title-icon">
                     <i class="fas fa-laptop"></i>
                 </div>
-                <span>Programming skills</span>
+                <span class="lang" key="ps">Programming skills</span>
             </div>
             <div class="detail-content">
                 <ul class="pg-list">
                     <li>
-                        <span><strong>Language</strong></span>
-                        <div><strong>Frameworks and technologies</strong></div>
+                        <span class="lang" key="lang" style="font-weight: bold;">Language </span>
+                       <div class="lang" key="framtech" style="font-weight: bold;">Frameworks and technologies</div>
                     </li>
                     <li>
                         <span>Java</span>
@@ -129,19 +136,28 @@
                         <div>git, svn</div>
                     </li>
                     <li>
-                        <span>Other languages</span>
+                        <span class="lang" key="langs">Other languages</span>
                         <div>C, C++, Assembly, php, html, CSS, SASS</div>
 
                     </li>
                 </ul>
             </div>
         </div>
+        <div class="detail-section interests">
+            <div class="detail-title">
+                <div class="title-icon">
+                    <i class="fas fa-star"></i>
+                </div>
+                <span class="tl-name"><a class="lang" key="diplom" href="https://drive.google.com/drive/folders/1pDYJA9-acqN3SSeGstf3O2n9-dzvfWVO?usp=sharing">Diplomas</a></span>
+            </div>
+
+        </div>
         <div class="detail-section tool-skill">
             <div class="detail-title">
                 <div class="title-icon">
                     <i class="fas fa-code"></i>
                 </div>
-                <span>Main Projects</span>
+                <span class="lang" key="mp">Main Projects</span>
             </div>
             <div class="detail-content">
                 <ul class="tool-list">
@@ -199,53 +215,17 @@
                             <circle cx="50" cy="50" r="45"></circle>
                             <circle class="cbar" cx="50" cy="50" r="45" style="--percent: 1"></circle>
                         </svg>
-                        <span class="tl-name"><a href="https://github.com/Ivanio1?tab=repositories">Other projects</a></span>
+                        <span class="tl-name"><a class="lang" key="op" href="https://github.com/Ivanio1?tab=repositories">Other projects</a></span>
 
                     </li>
                 </ul>
             </div>
 
         </div>
-        <div class="detail-section interests">
-            <div class="detail-title">
-                <div class="title-icon">
-                    <i class="fas fa-star"></i>
-                </div>
-                <span class="tl-name"><a href="https://drive.google.com/drive/folders/1pDYJA9-acqN3SSeGstf3O2n9-dzvfWVO?usp=sharing">Diplomas</a></span>
-            </div>
 
-        </div>
-        <div class="detail-section interests">
-            <div class="detail-title">
-                <div class="title-icon">
-                    <i class="fas fa-heart"></i>
-                </div>
-                <span>Interests</span>
-            </div>
-            <div class="detail-content">
-                <div class="outer-frame">
-                    <ul class="favor-list">
-                        <li>
-                            <i class="fa fa-book"></i>
-                            <span>Self-learning</span>
-                        </li>
-                        <li>
-                            <i class="fa fa-music"></i>
-                            <span>Music</span>
-                        </li>
-                        <li>
-                            <i class="fas fa-user-edit"></i>
-                            <span>Blog</span>
-                        </li>
-                        <li>
-                            <i class="fas fa-bolt"></i>
-                            <span>Sport</span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+
     </div>
 </div>
+<script src="jquery-3.7.0.min.js"></script>
 </body>
 </html>
